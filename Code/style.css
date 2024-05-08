@@ -15,6 +15,12 @@ html {
   word-spacing: 1px;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
 
 @font-face {
     font-family: psj;
@@ -39,6 +45,11 @@ h3{
 h4{
     font-size: 24px;
     font-weight: 500;
+}
+
+p{
+    line-height: 28px;
+
 }
 
 .material-symbols-outlined {
@@ -66,14 +77,15 @@ h4{
 .para-with-bg {
     display: inline-flex;
     max-width: 100%;
-    background-color: #0d0b33;
     color: #988adc;
     padding: 6px 15px;
     border-radius: 30px;
     font-size: 14px;
     font-weight: 600;
-    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
-}
+    background: linear-gradient(180deg, #12123b, rgb(41, 41, 79,0.1));
+    box-shadow: 1px -10px 100px 0px rgba(151, 151, 158, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(144, 134, 215,0.4);}
 
 .hero{
     display: flex;
@@ -102,8 +114,7 @@ h4{
 .hero-text img{
     max-width: 35px;
     max-height: 35px;
-    margin-bottom: 20px;
-    opacity: 0.7f;
+    opacity: 0.7;
 }
 
 .hero-text-parent{
@@ -116,7 +127,7 @@ h4{
 .filled-buttons-main{
     padding: 10px 16px;
     outline: none;
-    background-color: rgb(98, 61, 255);
+    background-color: rgb(70, 39, 205);
     border: transparent;
     font-family: poppins;
     border-radius: 6px;
@@ -126,7 +137,7 @@ h4{
 }
 
 .filled-buttons-main:hover{
-    background-color: rgb(79, 48, 221);
+    background-color: rgb(59, 35, 165);
     transition: ease 0.2s;
 }
 
@@ -140,7 +151,7 @@ button{
 
 button:hover{
     transition: ease 0.10s;
-    box-shadow: 1px 1px 50px 1px rgba(57, 37, 158, 0.5);
+    
 }
 
 /* End of button Styling */
@@ -149,7 +160,6 @@ button:hover{
     display: flex;
     flex-direction: row;
     gap: 40px;
-    margin-bottom: 60px;
 }
 
 .one .material-symbols-outlined{
@@ -178,8 +188,11 @@ button:hover{
     justify-content: center;
     align-items: center;
     height: 80px;
-    background-image: linear-gradient(#0c0e35,#15173f);
     border-radius: 8px;
+    background: linear-gradient(180deg, #1b1b57, rgb(41, 41, 79,0.1));
+    box-shadow: 1px -10px 50px 0px rgba(151, 151, 158, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(144, 134, 215,0.4);
 }
 
 .frameworks img{
@@ -196,11 +209,9 @@ button:hover{
 
 .future img{
     max-width: 80%;
-    margin-bottom: 50px;
+    margin-top: 20px;
     border-bottom-right-radius: 250px;
-    border-bottom-left-radius: 250px;
-    margin-top: 25px;
-    
+    border-bottom-left-radius: 250px;    
 }
 
 .long-icons-ast{
@@ -214,6 +225,7 @@ button:hover{
     background-color: rgba(102, 86, 240, 0.2);
     box-shadow: 1px 1px 20px 2px rgba(46, 40, 100, 0.4); 
     backdrop-filter: blur(100px);
+    margin-bottom: -30px;
 }
 
 .match-brands{
@@ -224,7 +236,7 @@ button:hover{
 
 .match-brands p{
     max-width: 70%;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 .match-brands b{
@@ -248,7 +260,6 @@ button:hover{
     backdrop-filter: blur(10px);
     min-width: 80vw;
     padding: 40px 20px;
-    margin-top: 20px;
     border-radius: 12px;
     border: 2px solid rgba(144, 134, 215, 0.4);
 }
@@ -281,7 +292,6 @@ code{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
 }
 
 .green-text{
@@ -308,5 +318,119 @@ code{
 
 .middle-main img{
     max-width: 100%;
-    margin-top: 80px;
+    margin-top: 40px;
+}
+
+.by-eng{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+ #icon{
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    border-radius: 100px;
+    background-image: linear-gradient(180deg, #1c214c,#29274b);
+    color: #ffffff;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+#voilet-para{
+    color: #9282dd;
+    font-weight: 700;
+}
+.by-eng h2{
+    max-width: 60%;
+}
+
+.by-eng{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.big-features{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.big-feature-card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    text-align: left;
+    max-width: 50%;
+    background: linear-gradient(180deg, #17174c, rgba(21, 21, 45, 0.5));
+    box-shadow: 1px -10px 50px 0px rgba(46, 46, 78, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px 40px;
+    border: 2px solid rgba(144, 134, 215, 0.4);
+
+}
+
+.big-feature-card p{
+    color: #dcdcdc;
+}   
+
+.big-feature-card h3{
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.big-feature-card img{
+    border-radius: 10px 10px 0px 0px;
+    max-width: 100%;
+    margin:20px 0px;
+    filter: brightness(1.3);
+    
+}
+
+.done-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.done{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.done h1{
+    font-weight: 500;
+    color: rgb(229, 229, 229);
+    font-size: 36px;
+    text-align: center;
+}
+
+.buttons-in{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-bottom: 70px;
+}
+
+.done .material-symbols-outlined{
+    vertical-align: center;
+    font-size: 100px;
+}
+
+#whatsapp{
+    background-color: #199082!important;
+}
+
+#whatsapp:hover{
+    background-color: #13695f!important;
+    transition: ease 0.10s!important;
 }
