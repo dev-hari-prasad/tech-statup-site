@@ -11,7 +11,7 @@ html {
   height: 100%;
   background: linear-gradient(40deg, #110d33, #1a1f5a, #19205b);
   background-attachment: fixed;
-  font-family: psj, Helvetica, sans-serif;
+  font-family: psj, system-ui,Helvetica, sans-serif;
   word-spacing: 1px;
 }
 
@@ -129,11 +129,11 @@ p{
     outline: none;
     background-color: rgb(70, 39, 205);
     border: transparent;
-    font-family: poppins;
     border-radius: 6px;
     cursor: pointer;
     flex-shrink: 0; /* Prevent the button from stretching */
     align-self: flex-start;
+    font-family: psj;
 }
 
 .filled-buttons-main:hover{
@@ -146,6 +146,7 @@ p{
 }
 
 button{
+    font-family: psj;
     user-select: none;
 }
 
