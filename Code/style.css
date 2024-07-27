@@ -7,7 +7,7 @@ p,h1,h2,h3,h4,h5,h6{
 }
 
 html {
-  padding: 40px 120px;
+  padding: 2% 7%;
   height: 100%;
   background: linear-gradient(40deg, #110d33, #1a1f5a, #19205b);
   background-attachment: fixed;
@@ -161,6 +161,7 @@ button:hover{
     display: flex;
     flex-direction: row;
     gap: 40px;
+    flex-wrap: wrap;
 }
 
 .one .material-symbols-outlined{
@@ -174,7 +175,7 @@ button:hover{
 }
 
 .one {
-    width: 33.33%;
+    width: 31%;
     align-items: left;
 }
 
@@ -198,7 +199,7 @@ button:hover{
 
 .frameworks img{
     display: inline-block;
-    height: 50px;
+    height:5cqmin;
     filter: grayscale(0.9);
 }
 
@@ -441,7 +442,7 @@ code{
 @media(max-width: 1110px){
     .hero{
         flex-direction: column;
-        gap: 80px;
+        gap: 50px;
     }
     .hero-text{
         min-height: 0vh;
@@ -451,6 +452,7 @@ code{
     .hero-slider{
         justify-content: left;
         align-items:left;
+        padding-bottom: 35px;
     }
 
     .para-with-bg-wrapper{
@@ -468,5 +470,103 @@ code{
 
     .future{
         justify-content: left;
+        display: none;
     }
+
+    .middle-main p{
+        min-width: 100%;
+    }
+    
+}
+
+@media (max-width:1245px){
+    .by-eng h2{
+        min-width: 100%;
+    }
+}
+
+@media (max-width:1445px){
+    .match-brands p{
+        max-width: 100%!important;
+    }
+
+    .code-and-image{
+        flex-direction: column-reverse;
+        gap: 50px;
+        padding: 5%!important;
+    }
+
+    .code-and-image .image{
+        width: 100%;
+        justify-content: left;
+        
+    }
+
+    .code-and-image .image img{
+        max-height: 50%!important;
+    }
+
+    .code{
+        width: 100%;
+    }
+
+    .big-feature-card{
+        min-width: 70%!important;   
+    }
+}
+
+
+@media (max-width:786px){
+    .code-and-image .image{
+        max-height: 100%!important;
+    }
+
+    .code-and-image .image img{
+        min-height: 100%!important;
+    }
+
+    .big-feature-card{
+        min-width: 100%!important;
+    }
+}
+
+@media (max-width:1445px){
+    .one{
+        width: 100%;
+    }
+
+    .some-features{
+        flex-direction: column;
+    }
+
+    .big-feature-card{
+        padding: 2% 7%;
+        border-radius: 10px;
+    }
+
+    .big-features{
+        padding: 2% 7%;
+    }
+}
+
+@media (max-width:512px){
+    .frameworks{
+        display: none;
+        width: 0;
+        height: 0;
+    }
+
+    .hero-slider{
+        padding-bottom: 0!important;
+    }
+}
+
+@media (max-width: 402px){
+    .para-with-bg{
+        border-radius: 8px;
+    }
+}
+
+.middle-main h2{
+    text-align: center;
 }
