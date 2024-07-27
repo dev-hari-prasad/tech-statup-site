@@ -435,3 +435,38 @@ code{
     background-color: #13695f!important;
     transition: ease 0.10s!important;
 }
+
+/* Responsive code */
+
+@media(max-width: 1110px){
+    .hero{
+        flex-direction: column;
+        gap: 80px;
+    }
+    .hero-text{
+        min-height: 0vh;
+        padding-top: 10%;
+    }
+
+    .hero-slider{
+        justify-content: left;
+        align-items:left;
+    }
+
+    .para-with-bg-wrapper{
+        width: 100%!important;
+    }
+
+    .frameworks{
+        display: inline-flex;
+    }
+
+    .frework-wrapper{
+        display: inline-flex!important;
+        width: 100%;
+    }
+
+    .future{
+        justify-content: left;
+    }
+}
